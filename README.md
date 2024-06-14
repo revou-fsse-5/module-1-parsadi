@@ -57,6 +57,7 @@ this is the content
                     <input type="text" id="email" name="email" placeholder="Your email">
                 </div>
                 <textarea name="" id="" cols="30" rows="10">Your Message</textarea>
+                <input type="submit">
 
             </form>
         </div>
