@@ -13,6 +13,49 @@ sticky
     </header>
 ```
 
+Media query 
+```css
+ .hamburger {
+        display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -1000%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu .active {
+        left: 0;
+    }
+
+```
+
 # MENU CONTENT
 this is the content
 ```html
@@ -34,6 +77,21 @@ this is the content
                 <h5>Special burger by our restaurant that will crave your gut</h5>
             </div>
         </div>
+```
+
+Media quey for Content 
+```css
+ .grid-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
 ```
 
 # ABOUT US
